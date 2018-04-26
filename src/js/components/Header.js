@@ -1,11 +1,9 @@
 import React from 'react';
-
 const Header = () => {
-	return (<nav>
+	return(<nav>
 		<div className='nav-wrapper'>
-			<a href='#' className='brand-logo'>Flaconi Challenge</a>
+			<div><a href='' className='brand-logo center'>Flaconi Challenge</a></div>
 		</div>
 	</nav>);
 }
-
 export default Header;

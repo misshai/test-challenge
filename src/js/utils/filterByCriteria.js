@@ -10,7 +10,7 @@ export const filterByCriteria = (arr, criteria) => {
 	if(criteria[FILTER_BY_BRAND]) {
 		criteria[FILTER_BY_BRAND].map((elem) => {
 			const filtered = _.filter(arr, [FILTER_BY_BRAND, elem.value]);
-			resultByBrand = [
+			return resultByBrand = [
 				...resultByBrand,
 				...filtered
 			];
@@ -19,7 +19,7 @@ export const filterByCriteria = (arr, criteria) => {
 	if(criteria[FILTER_BY_TYPE]) {
 		criteria[FILTER_BY_TYPE].map((elem) => {
 			const filtered = _.filter(arr, [FILTER_BY_TYPE, elem.value]);
-			resultByType = [
+			return resultByType = [
 				...resultByType,
 				...filtered
 			];
