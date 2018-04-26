@@ -81,7 +81,7 @@
     ],
     "testEnvironment": "node",
     "testURL": "http://localhost",
-    "coveragePathIgnorePatterns":[
+    "coveragePathIgnorePatterns": [
       "/index.js",
       "/registerServiceWorker.js"
     ],
