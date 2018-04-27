@@ -42,7 +42,11 @@ export class Pagination extends Component {
 	render() {
 		return <div>
 			<ItemsList items={this.calculateItems()}/>
-		<ReactPaginate forcePage={this.getforcePage()} previousLabel={'<'} nextLabel={'>'} breakLabel={<a href = "" > ...</a>} breakClassName='break-me' pageCount={Math.ceil(this.props.items?this.props.items.length / ITEMS_PER_PAGE:0)} marginPagesDisplayed={2} pageRangeDisplayed={3} onPageChange={this.handlePageClick} containerClassName={'pagination'} subContainerClassName={'pages pagination'} activeClassName={"active"}/>
+		<ReactPaginate forcePage={this.getforcePage()}
+			previousLabel={'<'} nextLabel={'>'} breakLabel={<a href = '' > ...</a>}
+			 breakClassName='break-me' pageCount={Math.ceil(this.props.items?this.props.items.length / ITEMS_PER_PAGE:0)}
+			 marginPagesDisplayed={2} pageRangeDisplayed={3} onPageChange={this.handlePageClick} containerClassName={'pagination'}
+			 subContainerClassName={'pages pagination'} activeClassName={'active'}/>
 		</div>
 	}
 }

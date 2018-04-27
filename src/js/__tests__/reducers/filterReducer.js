@@ -10,7 +10,7 @@ describe('filter reducer', () => {
 	it('handles action with uknown type', () => {
 		expect(filterReducer(undefined, {})).toBeInstanceOf(Object);
 	});
-	it('handles action with FILTER_ITEMS type', () => {
+	it('handles action with FILTER_ITEMS type and provided brand', () => {
 		const action = {
 			type: FILTER_ITEMS,
 			payload: {
@@ -24,7 +24,7 @@ describe('filter reducer', () => {
 			[FILTER_BY_TYPE]: [5, 6, 7]
 		});
 	});
-	it('handles action with FILTER_ITEMS type', () => {
+	it('handles action with FILTER_ITEMS type and provided type', () => {
 		const action = {
 			type: FILTER_ITEMS,
 			payload: {

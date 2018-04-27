@@ -1,12 +1,17 @@
 # test-challenge
 
-Multi-column list of products for an e-commerce website 
+Multi-column list of products for an e-commerce website
 
 ## Technologies and frameworks used
-React + redux, lodash, materializecss, sass, jest, enzyme
+* React + redux
+* lodash
+* materializecss
+* sass
+* jest
+* enzyme
 
 ## How to run
-Running project is available here:https://misshai.github.io/test-challenge/
+Running project is available[here](https://misshai.github.io/test-challenge/)
 
 If you want to run it manually you should have npm installed https://nodejs.org/en/
 1. download or clone sourses from https://github.com/misshai/test-challenge
@@ -22,6 +27,6 @@ Described here:
 * https://caniuse.com/#feat=flexbox
 * https://reactjs.org/docs/react-dom.html#browser-support
 
-## Minified version 
+## Minified version
 * can be created using ```npm build```
 * is available under gh-pages branch

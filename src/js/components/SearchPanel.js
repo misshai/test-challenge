@@ -51,10 +51,10 @@ export class SearchPanel extends Component {
 		});
 	}
 	render() {
-		return <div><Select id="state-select" onBlurResetsInput={false} onSelectResetsInput={false} options={SORT_BY_OPTIONS} clearable={true} name="selected-state" value={this.state.sortBy} onChange={(value) => this.onSortChange(value)} searchable={false}/>
-			<Select id="state-select"  onBlurResetsInput={false} multi={true} onSelectResetsInput={false} options={this.props.types} clearable={true} name="selected-state" value={this.state.filterByType} onChange={(value) => this.onFilterByTypeChange(value)} searchable={false}/>
+		return <div><Select  onBlurResetsInput={false} onSelectResetsInput={false} options={SORT_BY_OPTIONS} clearable={true} name='selected-state' value={this.state.sortBy} onChange={(value) => this.onSortChange(value)} searchable={false}/>
+			<Select   onBlurResetsInput={false} multi={true} onSelectResetsInput={false} options={this.props.types} clearable={true} name='selected-state' value={this.state.filterByType} onChange={(value) => this.onFilterByTypeChange(value)} searchable={false}/>
 
-			<Select id="state-select"  onBlurResetsInput={false} multi={true} onSelectResetsInput={false} options={this.props.brands} clearable={true} name="selected-state" value={this.state.filterByBrand} onChange={(value) => this.onFilterByBrandChange(value)} searchable={false}/>
+			<Select   onBlurResetsInput={false} multi={true} onSelectResetsInput={false} options={this.props.brands} clearable={true} name='selected-state' value={this.state.filterByBrand} onChange={(value) => this.onFilterByBrandChange(value)} searchable={false}/>
 		</div>
 	}
 }

@@ -6,7 +6,7 @@ import {
 	ResponsiveImageSize
 } from 'react-responsive-image';
 import {
-	getEurfromCent,
+	formatPrice,
 	formatImageURL
 } from '../utils';
 import {
@@ -34,7 +34,7 @@ class Item extends Component {
 					<div className='card-content'>
 						<span className='card-title'>{this.props.name}</span>
 						<p className='product-type'>{this.props.type}</p>
-						<p className='product-price'>{getEurfromCent(this.props.price)}
+						<p className='product-price'>{	formatPrice(this.props.price)}
 							/{(this.props.size)?this.props.size.toLowerCase():''}</p>
 					</div>
 					<a className='btn-floating halfway-fab waves-effect waves-light basket-button right'>

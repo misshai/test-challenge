@@ -8,27 +8,20 @@ import {
 } from '../../actions';
 describe('actions', () => {
 	describe('sort items', () => {
-		let action;
-		beforeEach(() => {
-			action = sortItems('some string');
-		});
-		it('has the correct type', () => {
-			expect(action.type).toEqual(SORT_ITEMS);
-		});
-		it('has the correct payload', () => {
-			expect(action.payload).toEqual('some string');
-		});
+		let action = sortItems('some string');
+		testAction(action, SORT_ITEMS, 'some string');
 	});
 	describe('filter items', () => {
-		let action;
-		beforeEach(() => {
-			action = filterItems('some string');
-		});
-		it('has the correct type', () => {
-			expect(action.type).toEqual(FILTER_ITEMS);
-		});
-		it('has the correct payload', () => {
-			expect(action.payload).toEqual('some string');
-		});
+		let action = filterItems('some string');
+		testAction(action, FILTER_ITEMS, 'some string');
 	});
 });
+
+function testAction(action, type, payload) {
+	it('has the correct type', () => {
+		expect(action.type).toEqual(type);
+	});
+	it('has the correct payload', () => {
+		expect(action.payload).toEqual(payload);
+	});
+}

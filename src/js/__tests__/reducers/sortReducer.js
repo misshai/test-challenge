@@ -12,7 +12,7 @@ describe('sort reducer', () => {
 	it('sets default state', () => {
 		expect(sortReducer(undefined, {})).toEqual(SORT_BY_RATING);
 	});
-	it('handles action with SORT_ITEMS type', () => {
+	it('handles action with SORT_ITEMS type and no payload', () => {
 		const action = {
 			type: SORT_ITEMS,
 			payload: {
@@ -21,7 +21,7 @@ describe('sort reducer', () => {
 		}
 		expect(sortReducer('', action)).toEqual('');
 	});
-	it('handles action with SORT_ITEMS type', () => {
+	it('handles action with SORT_ITEMS type and payload', () => {
 		let action = {
 			type: SORT_ITEMS,
 			payload: {

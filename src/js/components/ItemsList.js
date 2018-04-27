@@ -9,7 +9,7 @@ class ItemsList extends Component {
 		}) : 'No Items';
 	}
 	render() {
-		return(<div className="items">
+		return(<div className='items'>
 			{this.renderItems()}
 		</div>);
 	}

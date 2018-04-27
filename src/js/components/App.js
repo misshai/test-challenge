@@ -14,13 +14,12 @@ import {
 	withErrorBoundary
 } from './ErrorBoundary';
 import '../../scss/App.scss';
-import '../../css/dropdown.css';
 class App extends Component {
 	componentWillMount() {
 		this.props.fetchItems();
 	}
 	render() {
-		return(<div className="App">
+		return(<div className='App'>
 			<Header/>
 			<SearchPanel/>
 			<Pagination/>

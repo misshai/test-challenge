@@ -37,3 +37,31 @@
     box-sizing: border-box;
   }
 }
+
+@media (min-width:$desktop) {
+  .product-item-image {
+    max-width: 215px;
+    min-height: 300px;
+  }
+  .product-item {
+    min-height: 485px;
+  }
+}
+
+@media (min-width:$tablet) {
+  .product-item-image {
+    max-width: 150px;
+    min-height: 175px;
+  }
+  .product-item {
+    min-height: 350px;
+  }
+}
+
+.product-item-image {
+  max-width: 100px;
+  min-height: 100px;
+}
+.product-item {
+  min-height: 300px;
+}

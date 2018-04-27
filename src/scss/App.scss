@@ -18,3 +18,20 @@ body {
 .pagination {
   text-align: center;
 }
+
+.Select-value{
+  border: 1px solid darkgray !important;
+}
+
+
+
+.Select-value-label {
+  background-color: white;
+  color: #111;
+}
+
+.Select {
+  position: relative;
+  width: 33%;
+  display: inline-block;
+}

@@ -1,18 +1,17 @@
 export {
-	getEurfromCent
+	formatPrice
 }
-from "./formatMoney";
+from './formatCurrency';
 export {
 	formatImageURL
 }
-from "./formatURL";
+from './formatURL';
 export {
 	sortByCriteria
 }
-from "./sortByCriteria";
-
+from './sortByCriteria';
 export {
 	filterByCriteria,
 	getValuesById
 }
-from "./filterByCriteria";
+from './filterByCriteria';
