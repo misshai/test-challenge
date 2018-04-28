@@ -1,5 +1,5 @@
 import 'materialize-css/dist/css/materialize.min.css';
-import 'react-select/dist/react-select.css';
+//import 'react-select/dist/react-select.css';
 import React from 'react';
 import ReactDom from 'react-dom';
 import {

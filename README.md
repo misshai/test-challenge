@@ -11,11 +11,11 @@ Multi-column list of products for an e-commerce website
 * enzyme
 
 ## How to run
-Running project is available[here](https://misshai.github.io/test-challenge/)
+Running project is available [here](https://misshai.github.io/test-challenge/)
 
 If you want to run it manually you should have npm installed https://nodejs.org/en/
 1. download or clone sourses from https://github.com/misshai/test-challenge
-2. Go to project dir 
+2. Go to project dir
 3. Run ```npm install```
 4. Run ```npm start``` - project will be opened in your browser http://localhost:3000/
 5. Run Tests ```npm test```

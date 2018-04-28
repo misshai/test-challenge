@@ -6,8 +6,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
+  line-height: inherit;
 
+}
 .error {
   background-color: $primary-color;
   border-top: 1px solid #777;
@@ -19,19 +20,10 @@ body {
   text-align: center;
 }
 
-.Select-value{
-  border: 1px solid darkgray !important;
+.search-panel{
+  display:flex;
 }
-
-
-
-.Select-value-label {
-  background-color: white;
-  color: #111;
-}
-
-.Select {
-  position: relative;
-  width: 33%;
-  display: inline-block;
+input[type=text]:not(.browser-default){
+  height:0px;
+  margin:0;
 }
