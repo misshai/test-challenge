@@ -30,3 +30,6 @@ Described here:
 ## Minified version
 * can be created using ```npm build```
 * is available under gh-pages branch
+
+## Known issues
+Dropdown. Value on mobile is hardly visible and cannot be removed.
