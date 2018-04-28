@@ -20,7 +20,7 @@ If you want to run it manually you should have npm installed https://nodejs.org/
 4. Run ```npm start``` - project will be opened in your browser http://localhost:3000/
 5. Run Tests ```npm test```
 6. Test coverage ```npm test -- --coverage```
-7. Create product build ```npm build```
+7. Create product build ```npm run build```
 
 ## Browsers support
 Described here:
