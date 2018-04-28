@@ -62,9 +62,9 @@ export class SearchPanel extends Component {
 				height: '100%'
 			})
 		};
-		return <div className='search-panel'><Select placeholder='Sort By...' styles={customStyles}  onBlurResetsInput={false} onSelectResetsInput={false} options={SORT_BY_OPTIONS} clearable={true} name='selected-state' value={this.state.sortBy} onChange={(value) => this.onSortChange(value)} isSearchable={false}/>
-	<Select placeholder='Type...' styles={customStyles}  onBlurResetsInput={false} isMulti={true} onSelectResetsInput={false} options={this.props.types} clearable={true} name='selected-state' value={this.state.filterByType} onChange={(value) => this.onFilterByTypeChange(value)} isSearchable={false}/>
-	<Select placeholder='Brand...' styles={customStyles}  onBlurResetsInput={false} isMulti={true} onSelectResetsInput={false} options={this.props.brands} clearable={true} name='selected-state' value={this.state.filterByBrand} onChange={(value) => this.onFilterByBrandChange(value)} isSearchable={false}/>
+		return <div className='search-panel'><Select placeholder='Sort By...' styles={customStyles}  onBlurResetsInput={false} onSelectResetsInput={false} options={SORT_BY_OPTIONS} clearable={true} name='selected-state' value={this.state.sortBy} onChange={(value) => this.onSortChange(value)} />
+	<Select placeholder='Type...' styles={customStyles}  onBlurResetsInput={false} isMulti={true} onSelectResetsInput={false} options={this.props.types} clearable={true} name='selected-state' value={this.state.filterByType} onChange={(value) => this.onFilterByTypeChange(value)}/>
+	<Select placeholder='Brand...' styles={customStyles}  onBlurResetsInput={false} isMulti={true} onSelectResetsInput={false} options={this.props.brands} clearable={true} name='selected-state' value={this.state.filterByBrand} onChange={(value) => this.onFilterByBrandChange(value)} />
 		</div>
 	}
 }

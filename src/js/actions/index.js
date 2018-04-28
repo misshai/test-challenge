@@ -6,10 +6,10 @@ import {
 export const fetchItems = () => async dispatch => {
 	//TODO: link to config
 	const res = await fetch('./json/items.json');
-	const res1 = await res.json();
+	const json = await res.json();
 	dispatch({
 		type: FETCH_ITEMS,
-		payload: res1
+		payload: json
 	});
 }
 export const sortItems = (criteria) => {
