@@ -28,7 +28,7 @@ Described here:
 * https://reactjs.org/docs/react-dom.html#browser-support
 
 ## Minified version
-* can be created using ```npm build```
+* can be created using ```npm run build```
 * is available under gh-pages branch
 
 ## Known issues
